@@ -1,8 +1,23 @@
 from typing import List
 
-def insertionSort(array) -> List[int]:
-  # Write your code here
 
+
+
+
+
+def insertionSort(array) -> List[int]:
+  if len(array)==1:
+    return array
+  for i in range(1,len(array)):
+      temp=array[i]
+      j=i-1
+      while(j>=0 and temp<array[j]):
+        array[j+1]=array[j]
+        j=j-1
+      array[j+1]=temp
+  return array
+      
+      
 # data = [9, 5, 1, 4, 3]
 input_data = input()
 data = []
