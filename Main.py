@@ -1,6 +1,6 @@
 from typing import List
 
-def swap(arr[j],arr[k]):
+def swap(arr,j,k):
   temp=arr[j]
   arr[j]=arr[k]
   arr[k]=temp
@@ -16,7 +16,7 @@ def insertionSort(array) -> List[int]:
     for j in range(i,-1,-1):
       if execution==0:
         if array[i]<array[j]:
-          swap(array[i],array[j])
+          swap(array,i,j)
           execution=1
        else:
           array[j+1]=array[j]
