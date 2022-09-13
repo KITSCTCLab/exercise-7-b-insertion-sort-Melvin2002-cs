@@ -1,8 +1,31 @@
 from typing import List
 
-def insertionSort(array) -> List[int]:
-  # Write your code here
+def swap(arr[j],arr[k]):
+  temp=arr[j]
+  arr[j]=arr[k]
+  arr[k]=temp
+             
 
+
+
+
+def insertionSort(array) -> List[int]:
+  for i in range(0,len(array)-1):
+    temp=i
+    execution=0
+    for j in range(i,-1,-1):
+      if execution==0:
+        if array[i]<array[j]:
+          swap(array[i],array[j])
+          execution=1
+       else:
+          array[j+1]=array[j]
+  return array
+      
+      
+      
+      
+      
 # data = [9, 5, 1, 4, 3]
 input_data = input()
 data = []
