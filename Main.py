@@ -18,7 +18,7 @@ def insertionSort(array) -> List[int]:
         if array[i]<array[j]:
           swap(array,i,j)
           execution=1
-       else:
+        else:
           array[j+1]=array[j]
   return array
       
